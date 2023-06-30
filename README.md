@@ -7,7 +7,7 @@ plugins.lua tells packer to import the plugins from git.
 
 
 
-*Note*: Make sure not to keep the name of the plugin file same as plugin, it can cause integration issues at nvim startup. 
+*Note*: Make sure not to keep the name of the plugin file same as the name of plugin, it can cause integration issues at nvim startup. 
 
 For example, name of mason plugin file can be mason-config.lua instead of mason.lua.
 
