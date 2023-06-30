@@ -28,4 +28,8 @@
 <img width="1427" alt="Screenshot 2023-07-01 at 2 47 06 AM" src="https://github.com/gitynity/nvim-config/assets/23361845/80651527-d453-42f1-9643-2a3e0e29e565">
 
 
+<bre />
 
+### References
+
+- Percy Bolmé. [Learn How To Use NeoVim As an IDE](https://programmingpercy.tech/blog/learn-how-to-use-neovim-as-ide/) @ProgrammingPercy.
