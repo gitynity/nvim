@@ -1,8 +1,11 @@
+- packer plugin manager is used to install the plugins.
+
 - init.lua is the main file where we call all plugins at neovim startup.
 
 - lua directory contains individual plugin files and a file called plugins.lua.
 
 - plugins.lua tells packer to import the plugins from git.
+ 
 
 
 # Directory structure of .config/nvim:
