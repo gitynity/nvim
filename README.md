@@ -14,6 +14,7 @@
 -  mkdir -p ~/.config/nvim/pack/packer/start <!-- Make directory structure like this to setup packer plugin mananger -->
 -  cd ~/.config/nvim/pack/packer/start <!-- cd to this location to install clone packer  -->
 -  git clone https://github.com/wbthomason/packer.nvim <!-- clone packer repo -->
+-  open nvim and run :PackerSync <!-- This will install all plugins with configurations -->
 
 ---
 <br />
