@@ -10,10 +10,13 @@
 <br />
 
 ---
-# Packer setup for nvim plugins installation
--  mkdir -p ~/.config/nvim/pack/packer/start
--   cd ~/.config/nvim/pack/packer/start
--   git clone https://github.com/wbthomason/packer.nvim
+# Installation
+
+-  cd ~/.config   <!-- cd into your config directory -->
+-  git clone https://github.com/gitynity/nvim.git <!-- clone this repo -->
+-  mkdir -p ~/.config/nvim/pack/packer/start <!-- Make directory structure like this to setup packer plugin mananger -->
+-  cd ~/.config/nvim/pack/packer/start <!-- cd to this location to install clone packer  -->
+-  git clone https://github.com/wbthomason/packer.nvim <!-- clone packer repo -->
 
 ---
 <br />
