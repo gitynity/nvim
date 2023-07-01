@@ -4,8 +4,6 @@
 
 - lua directory contains individual plugin files and a common import file for all plugins called plugins.lua.
 
- 
-<br /> 
 <br />
 
 ---
