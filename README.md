@@ -7,6 +7,16 @@
 - plugins.lua tells packer to import the plugins from git.
  
 <br /> 
+<br />
+
+---
+# Packer setup for nvim plugins installation
+-  mkdir -p ~/.config/nvim/pack/packer/start
+-   cd ~/.config/nvim/pack/packer/start
+-   git clone https://github.com/wbthomason/packer.nvim
+
+---
+<br />
 
 # Directory structure of .config/nvim:
 
