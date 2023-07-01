@@ -21,10 +21,10 @@ return require('packer').startup(function(use)
     },
  }
  -- DAP for debugging
-     use 'mfussenegger/nvim-dap'
- -- UI for DAP
-     use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
-
+ use {"rcarriga/nvim-dap-ui",requires = {"mfussenegger/nvim-dap"}}
+ use 'theHamsta/nvim-dap-virtual-text'
+ use 'leoluz/nvim-dap-go'
+ 
  -- Treesitter
      use {
   -- recommended packer way of installing it is to run this function, copied from documentation
