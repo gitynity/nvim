@@ -2,7 +2,7 @@
 
 - init.lua is the main file where we call all plugins at neovim startup.
 
-- lua directory contains individual plugin files and a file called plugins.lua.
+- lua directory contains individual plugin files and a common import file for all plugins called plugins.lua.
 
 - plugins.lua tells packer to import the plugins from git.
  
