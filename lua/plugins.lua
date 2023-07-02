@@ -67,4 +67,7 @@ use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devico
 	 priority = 1000,
 	 opts = {},
  }
+
+-- set nvim editor transparent
+use 'tribela/vim-transparent'
 end)
