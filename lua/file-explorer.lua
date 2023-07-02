@@ -8,10 +8,11 @@ vim.opt.termguicolors = true
 -- load on startup, close when file is opened
 vim.g.nvim_tree_auto_open = 1
 vim.g.nvim_tree_auto_close = 1
-
 vim.g.nvim_tree_auto_resize = 1
-
 
 vim.cmd('autocmd VimLeavePre * :NvimTreeClose')
 
-require('nvim-tree').setup{}
+-- set nvim-tree transparent
+vim.cmd("autocmd FileType nvimtree highlight NvimTreeNormal guibg=NONE ctermbg=NONE")
+
+require('nvim-tree').setup{winblend=34,}

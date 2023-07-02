@@ -1,40 +1,37 @@
--- update leader key to ,
+-- UPdate leader key to ,
 vim.g.mapleader = " "
 
 -- fetch keymap
 local map = vim.api.nvim_set_keymap
 
--- map the key n to run the command :NvimTreeToggle
+-- Increase or decrease split size using Option key (Alt)
+map('n', '<M-S-Right>', ':vertical resize +5<CR>', { silent = true })
+map('n', '<M-S-Left>', ':vertical resize -5<CR>', { silent = true })
+map('n', '<M-S-Up>', ':resize +5<CR>', { silent = true })
+map('n', '<M-S-Down>', ':resize -5<CR>', { silent = true })
+
+
+-- Switch between windows
+map('n', '<M-Tab>', '<C-w>w', { silent = true })
+
+-- Move to the upper line with the left arrow at the beginning of a line
+map('n', '<Left>', 'col(".") == 1 ? "k" : "<Left>"', { expr = true })
+
+-- map the key to open tagbar
+map('n','<leader><Up>',':TagbarToggle<CR>',{noremap = true, silent = true})
+
+-- map the key to run the command :NvimTreeToggle
 map('n', '<leader>n', [[:NvimTreeToggle<CR>]], {})
 
--- nvim-dap keymappings
--- Press f5 to debug
-map('n', '<F5>', [[:lua require'dap'.continue()<CR>]], {})
--- Press CTRL + b to toggle regular breakpoint
-map('n', '<C-b>', [[:lua require'dap'.toggle_breakpoint()<CR>]], {})
+-- Define the keymap for bufferline cycling
+map('n', '<S-Right>', ':BufferLineCycleNext<CR>', { noremap = true, silent = true })
+map('n', '<S-Left>', ':BufferLineCyclePrev<CR>', { noremap = true, silent = true })
 
--- nvim-dap keymappings
--- Press f5 to debug
-map('n', '<F5>', [[:lua require'dap'.continue()<CR>]], {})
--- Press CTRL + b to toggle regular breakpoint
-map('n', '<C-b>', [[:lua require'dap'.toggle_breakpoint()<CR>]], {})
--- Press CTRL + c to toggle Breakpoint with Condition
-map('n', '<C-c>', [[:lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint Condition: '))<CR>]], {})
--- Press CTRL + l to toggle Logpoint
-map('n', '<C-l>', [[:lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log Point Msg: '))<CR>]], {})
--- Pressing F10 to step over
-map('n', '<F10>', [[:lua require'dap'.step_over()<CR>]], {})
--- Pressing F11 to step into
-map('n', '<F11>', [[:lua require'dap'.step_into()<CR>]], {})
--- Pressing F12 to step out
-map('n', '<F12>', [[:lua require'dap'.step_out()<CR>]], {})
--- Press F6 to open REPL
-map('n', '<F6>', [[:lua require'dap'.repl.open()<CR>]], {})
--- Press dl to run last ran configuration (if you used f5 before it will re run it etc)
-map('n', 'dl', [[:lua require'dap'.run_last()<CR>]], {})
-
--- Press Ctrl+d to toggle debug mode, will remove NvimTree also
-map('n', '<C-d>', [[:NvimTreeToggle<CR> :lua require'dapui'.toggle()<CR>]], {})
+-- Debugger
+map('n','<leader>dt',':DapUiToggle<CR>',{noremap=true})
+map('n','<leader>db','DapToggleBreakpoint<CR>',{noremap=true})
+map('n','<leader>dc',':DapContinue<CR>',{noremap=true})
+map('n','<leader>dr',":lua require('dapui).open({reset=true}) <CR>",{noremap=true})
 
 -- float-term
 map('n', '<Leader>t', ':FloatermToggle<CR>', { silent = true })
