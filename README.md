@@ -21,13 +21,7 @@
 
 # Directory structure of .config/nvim:
 
-<img width="721" alt="Screenshot 2023-07-01 at 2 37 40 AM" src="https://github.com/gitynity/nvim-config/assets/23361845/f0646fc5-2bfd-4145-9aee-1781823f7827">
-
-
-
-
-
-
+<img width="739" alt="Screenshot 2023-07-03 at 2 46 04 AM" src="https://github.com/gitynity/nvim/assets/23361845/a47cb3db-8ab1-41fa-8d34-68d6cc52c32c">
 
 
 ##### Note: Make sure not to keep the name of the plugin file same as the name of plugin, it can cause integration issues at nvim startup. 
@@ -36,7 +30,9 @@
 
 # UI look:
 
-<img width="1427" alt="Screenshot 2023-07-01 at 2 47 06 AM" src="https://github.com/gitynity/nvim-config/assets/23361845/80651527-d453-42f1-9643-2a3e0e29e565">
+<img width="1427" alt="Screenshot 2023-07-03 at 2 43 46 AM" src="https://github.com/gitynity/nvim/assets/23361845/1f8d629b-3cb7-4e67-bb1a-ef9ec42ba1aa">
+
+
 
 
 <bre />
